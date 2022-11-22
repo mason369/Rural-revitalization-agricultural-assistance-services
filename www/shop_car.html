@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="UTF-8" />
+		<title>我的购物车-品优购</title>
+		<meta
+			name="description"
+			content="品优购JD.COM-专业的综合网上购物商城,销售家电、数码通讯、电脑、家居百货、服装服饰、母婴、图书、食品等数万个品牌优质商品.便捷、诚信的服务，为您提供愉悦的网上购物体验!"
+		/>
+		<meta
+			name="Keywords"
+			content="网上购物,网上商城,手机,笔记本,电脑,MP3,CD,VCD,DV,相机,数码,配件,手表,存储卡,品优购"
+		/>
+		<!-- 引入facicon.ico网页图标 -->
+		<link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" href="../scss/mixinShopCar.css" />
+		<link rel="stylesheet" href="../fonts/fa/css/all.css" />
+		<!-- 在引入我们自己的js文件 -->
+	</head>
+
+	<body>
+		<!-------------- head头部------------ -->
+		<div class="head" id="translation">
+			<div class="header">
+				<div class="header-box contain">
+					<div class="header-top">
+						<ul class="header-left">
+							<li>
+								<a href="../www/mobile_index.html"
+									><i class="fa fa-mobile-alt"></i>手机版</a
+								>
+							</li>
+							<span>|</span>
+							<li>
+								<a href="javascript:;"
+									><i class="fas fa-user-friends"></i>商家入驻</a
+								>
+							</li>
+						</ul>
+						<ul class="header-right">
+							<li>
+								<a class="loc-an-box" href="javascript:;"
+									><div class="loc-mc-box">
+										<p class="loc-mc-box__text">
+											<i class="fa fa-comments"></i>一条未读
+										</p>
+										<p class="loc-mc-box__text">
+											<i class="fa fa-bell"></i>我的消息
+										</p>
+										<p class="loc-mc-box__text">
+											<i class="fa fa-comments"></i>一条未读
+										</p>
+									</div></a
+								>
+							</li>
+							<span>|</span>
+							<li>
+								<a href="javascript:;"
+									><i class="fa fa-shopping-cart"></i>购物车</a
+								>
+							</li>
+							<span>|</span>
+							<li>
+								<a href="javascript:;"><i class="fa fa-user"></i>用户中心</a>
+							</li>
+							<span>|</span>
+							<li>
+								<a href="javascript:;"
+									><i class="fa fa-comment-dots"></i>客户服务</a
+								>
+							</li>
+							<span>|</span>
+							<li>
+								<a href="javascript:;"><i class="fa fa-globe"></i>网站导航</a>
+							</li>
+							<span>|</span>
+							<li><a href="javascript:;" id="change">English</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="car-header">
+			<div class="car-logo contain">
+				<a href="../www/index.html"><img src="../img/logo.png" alt="" /> </a>
+				<b>购物车</b>
+			</div>
+		</div>
+
+		<div class="c-container contain">
+			<div class="w-box">
+				<div class="cart-filter-bar">
+					<em>全部商品</em>
+				</div>
+				<!-- 购物车主要核心区域 -->
+				<div class="cart-warp">
+					<!-- 头部全选模块 -->
+					<div class="cart-thead">
+						<div class="t-checkbox">
+							<input type="checkbox" name="" id="" class="checkall" /> 全选
+						</div>
+						<div class="t-goods">商品</div>
+						<div class="t-price">单价</div>
+						<div class="t-num">数量</div>
+						<div class="t-sum">小计</div>
+						<div class="t-action">操作</div>
+					</div>
+					<!-- 商品详细模块 -->
+					<div class="cart-item-list">
+						<div class="cart-item check-cart-item">
+							<div class="p-checkbox">
+								<input
+									type="checkbox"
+									name=""
+									id=""
+									checked
+									class="j-checkbox"
+								/>
+							</div>
+							<div class="p-goods">
+								<div class="p-img">
+									<img src="../img/zjsp/河南大土豆.jpg" alt="" />
+								</div>
+								<div class="p-msg">
+									河南大土豆
+								</div>
+							</div>
+							<div class="p-price">￥12.60</div>
+							<div class="p-num">
+								<div class="quantity-form">
+									<a href="javascript:;" class="decrement">-</a>
+									<input type="text" class="itxt" value="1" />
+									<a href="javascript:;" class="increment">+</a>
+								</div>
+							</div>
+							<div class="p-sum">￥12.60</div>
+							<div class="p-action"><a href="javascript:;">删除</a></div>
+						</div>
+						<div class="cart-item">
+							<div class="p-checkbox">
+								<input type="checkbox" name="" id="" class="j-checkbox" />
+							</div>
+							<div class="p-goods">
+								<div class="p-img">
+									<img src="../img/zjsp/重庆西红柿.jpg" alt="" />
+								</div>
+								<div class="p-msg">
+									重庆西红柿
+								</div>
+							</div>
+							<div class="p-price">￥24.80</div>
+							<div class="p-num">
+								<div class="quantity-form">
+									<a href="javascript:;" class="decrement">-</a>
+									<input type="text" class="itxt" value="1" />
+									<a href="javascript:;" class="increment">+</a>
+								</div>
+							</div>
+							<div class="p-sum">￥24.80</div>
+							<div class="p-action"><a href="javascript:;">删除</a></div>
+						</div>
+						<div class="cart-item">
+							<div class="p-checkbox">
+								<input type="checkbox" name="" id="" class="j-checkbox" />
+							</div>
+							<div class="p-goods">
+								<div class="p-img">
+									<img src="../img/zjsp/百香果.jpg" alt="" />
+								</div>
+								<div class="p-msg">
+									百香果
+								</div>
+							</div>
+							<div class="p-price">￥29.80</div>
+							<div class="p-num">
+								<div class="quantity-form">
+									<a href="javascript:;" class="decrement">-</a>
+									<input type="text" class="itxt" value="1" />
+									<a href="javascript:;" class="increment">+</a>
+								</div>
+							</div>
+							<div class="p-sum">￥29.80</div>
+							<div class="p-action"><a href="javascript:;">删除</a></div>
+						</div>
+					</div>
+
+					<!-- 结算模块 -->
+					<div class="cart-floatbar">
+						<div class="select-all">
+							<input type="checkbox" name="" id="" class="checkall" />全选
+						</div>
+						<div class="operation">
+							<a href="javascript:;" class="remove-batch"> 删除选中的商品</a>
+							<a href="javascript:;" class="clear-all">清理购物车</a>
+						</div>
+						<div class="toolbar-right">
+							<div class="amount-sum">已经选<em>1</em>件商品</div>
+							<div class="price-sum">总价： <em>￥12.60</em></div>
+							<div class="btn-area">去结算</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- /*---------------- 脚部---------------- */ -->
+		<div class="shar-to">
+			<div class="shar-to-one">
+				<a href="javascript:;" class="shar-one">
+					<i class="fa fa-phone-alt"></i>
+					<p>客服</p></a
+				>
+
+				<div class="shar-more-more-1">
+					<span></span>
+					<div class="shar-more-qq-1">
+						<a href="#"
+							><i class="fas fa-phone"></i>
+							<p>客服010-38498</p></a
+						>
+					</div>
+					<div class="shar-more-qq-1">
+						<a href="#"
+							><i class="fas fa-phone"></i>
+							<p>客服080-38344</p></a
+						>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="shar-to">
+			<div class="shar-to-two shar-two-two">
+				<a href="javascript:;" class="shar-two">
+					<p><i class="fa fa-share-square"></i></p>
+					<p>分享</p></a
+				>
+				<a href="javascript:;" class="shar-two">
+					<p><i class="fa fa-paper-plane"></i></p
+				></a>
+				<a href="javascript:;" class="shar-two">
+					<p><i class="fa fa-share-square"></i></p>
+					<p>分享</p></a
+				>
+				<div class="shar-more-more">
+					<span></span>
+					<div class="shar-more-qq">
+						<a href="#"
+							><i class="fab fa-qq"></i>
+							<p>分享至QQ</p></a
+						>
+					</div>
+					<div class="shar-more-qq">
+						<a href="#"
+							><i class="fab fa-weixin"></i>
+							<p>分享至微信</p></a
+						>
+					</div>
+
+					<div class="shar-more-qq">
+						<a href="#"
+							><i class="fab fa-line"></i>
+							<p>分享至Line</p></a
+						>
+					</div>
+					<div class="shar-more-qq">
+						<a href="#"
+							><i class="fab fa-github"></i>
+							<p>分享至Github</p></a
+						>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="shar-to">
+			<div class="shar-to-three">
+				<a href="javascript:;" class="shar-three">
+					<i class="fa fa-home"></i>
+					<p>返回顶部</p></a
+				>
+			</div>
+		</div>
+		<div class="footer-head">
+			<div class="footer-header">
+				<div class="introduce">
+					<i class="fa fa-leaf"></i>
+					<div class="foolter-header-title">绿色</div>
+				</div>
+
+				<div class="introduce">
+					<i class="fa fa-cloud"></i>
+					<div class="foolter-header-title">智能</div>
+				</div>
+				<div class="introduce">
+					<i class="fa fa-tags"></i>
+					<div class="foolter-header-title">实惠</div>
+				</div>
+				<div class="introduce">
+					<i class="fa fa-paper-plane"></i>
+					<div class="foolter-header-title">安全</div>
+				</div>
+				<div class="introduce">
+					<i class="fa fa-desktop"></i>
+					<div class="foolter-header-title">便捷</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-head-body">
+			<div class="footer-header-body">
+				<span>xx农产网是一家专注于绿色有机农产品的专业服务网</span>
+
+				<span>xx专注于满足市场需求不断拓展服务区域</span>
+
+				<span>没有中间商，免除差价让交易更加简单</span>
+
+				<span>实名认证登录、注册专业渠道让交易更加有保障</span>
+
+				<span>快速稳定的销往全国各地经销商和个体户</span>
+			</div>
+		</div>
+		<div class="footer-body">
+			<ul class="aboutt">
+				<li><a href="javascript:;">关于我们</a></li>
+				<span>|</span>
+				<li><a href="javascript:;">法律申明</a></li>
+				<span>|</span>
+				<li><a href="javascript:;">使用协议</a></li>
+				<span>|</span>
+				<li><a href="javascript:;">版权隐私</a></li>
+				<span>|</span>
+				<li><a href="javascript:;">友情链接</a></li>
+				<span>|</span>
+				<li><a href="javascript:;">成功案例</a></li>
+				<span>|</span>
+				<li><a href="javascript:;">XX大事件</a></li>
+				<span>|</span>
+				<li><a href="javascript:;">产品库</a></li>
+				<span>|</span>
+				<li><a href="javascript:;">品种库</a></li>
+				<span>|</span>
+				<li><a href="javascript:;">产品价格大全</a></li>
+				<span>|</span>
+				<li><a href="javascript:;">产品地图</a></li>
+			</ul>
+		</div>
+		<div class="foolter-bootm">
+			<ol class="infor">
+				<li>蜀ICP备12345678号-1服务热线:400-008-8888</li>
+				<li>
+					互联网农产品信息服务资格证书:(蜀)–经营性-2019-0001四川xx农产品网营业执照
+				</li>
+				<li>&copy;-2022 Cnhnb B2B SYSTEN ALL Rights Reserved</li>
+			</ol>
+		</div>
+		<div class="login-regster-box">
+			<div class="login-regster">
+				<div class="login-regster-head">
+					<h3>注册登录</h3>
+					<button id="closed-login">X</button>
+				</div>
+				<div class="login-regster-body">
+					<h2>注册登录</h2>
+					<img src="../img/qrcode-login.jpg" alt="" />
+					<div class="login-regster-weixin">
+						<i class="fab fa-weixin"></i>
+						<p>微信扫码登录</p>
+					</div>
+					<div class="login-regster-body-head">
+						<a href="#">微信登录</a>
+						<a href="#" id="root-login">游客登录</a>
+						<a href="#">密码登录</a>
+					</div>
+					<div class="login-regster-icon">
+						<a href="#"><i class="fab fa-google"></i></a>
+						<a href="#"><i class="fab fa-github"></i></a>
+						<a href="#"><i class="fab fa-gitlab"></i></a>
+						<a href="#"><i class="points-login-regster">···</i></a>
+					</div>
+					<div class="loginregster-footer">
+						<p>继续即代表同意</p>
+						<a href="#">《服务协议》</a>
+						<p>和</p>
+						<a href="#">《隐私政策》</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="../js/public/jquery-3.6.0.min.js"></script>
+		<script src="../js/pc/shopCar.js"></script>
+	</body>
+</html>

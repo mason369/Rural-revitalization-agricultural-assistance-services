@@ -1,0 +1,102 @@
+.shop-car-infor {
+	display: none;
+	.shop-car-infor-head {
+		height: 1.75rem;
+		width: auto;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		background-color: $grey-color;
+		color: $black-color;
+	}
+	i{
+		margin: 0 .75rem;
+	}
+	.infor-shop-car {
+		height: 1.25rem;
+		font-size: .6rem;
+		background-color: $words-color;
+		line-height: 1.25rem;
+	}
+	.more-shop-car {
+		border: .075rem solid $grey-color;
+		border-left: none;
+		border-right: none;
+		height: 2.25rem;
+		background-color: $words-color;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		color: $huihei-color;
+		h3 {
+			font-size: .8rem;
+		}
+		.more-shop-car-right {
+			i{
+				margin: 0 .5rem;
+			}
+			font-size: .7rem;
+			width: 3.5rem;
+			color: $black-color;
+			display: flex;
+			justify-content: space-around;
+		}
+	}
+	.shop-car-body {
+		height: 2.5rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: $grey-color;
+		color: $huihei-color;
+		font-size: .8rem;
+		span {
+			color: $black-color;
+			height: .95rem;
+			padding: .15rem .3rem;
+			border: .05rem solid;
+			font-size: .65rem;
+			line-height: .95rem;
+		}
+		p {
+			margin: 0 .5rem;
+			font-size: .7rem;
+		}
+	}
+	.more-goods {
+		height: 1.75rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: .7rem;
+		span {
+			border-top: none;
+			color: $black-color;
+		}
+		p {
+			display: block;
+			margin: 0 .5rem;
+		}
+	}
+	.goods-more-tuijian {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+		.goods-tuijain-body {
+			img {
+				width: 7.5rem;
+			}
+			h3 {
+				margin: .4rem 0;
+				font-size: .75rem;
+			}
+			p {
+				margin-bottom: .25rem;
+				font-size: .7rem;
+				color: #eb625c;
+			}
+		}
+		background-color: #f6f6f4;
+	}
+}

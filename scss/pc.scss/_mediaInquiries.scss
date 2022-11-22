@@ -1,0 +1,41 @@
+
+//设置媒体查询
+@media only screen{
+    // 断点 768px
+    @media (min-width: 768px){
+    //    .left-menu{
+    //        order: 2;
+    //        flex: auto;
+    //        //显示菜单
+    //        .nav{
+    //            display: flex;
+    //            position: static;
+    //            padding: 0;
+    //            justify-content: space-around;
+    //            li{
+    //                width: auto;
+    //                border-bottom: none;
+    //                margin: 0;
+    //                a{
+    //                    line-height: 48px;
+    //                }
+
+    //                span{
+    //                    display: none;
+    //                }
+    //            }
+    //        }
+    //        //隐藏菜单图标
+    //        .menu-icon{
+    //            display: none;
+    //        }
+
+    //    }
+    //    .logo{
+    //        order: 1;
+    //    }
+    //    .user-info{
+    //        order: 3;
+    //    }
+    }
+}

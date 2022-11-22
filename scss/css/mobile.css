@@ -1,0 +1,509 @@
+@charset "UTF-8";
+body .guanyuwomen .image img {
+  width: 373px;
+}
+body .guanyuwomen .about {
+  text-align: center;
+  font-family: "myfont";
+}
+body .guanyuwomen .text {
+  font-size: 12px;
+}
+body .guanyuwomen .picture-1 img {
+  width: 100px;
+  float: left;
+}
+body .guanyuwomen .picture-2 img {
+  width: 100px;
+  float: right;
+}
+/* v2.0 | 20110126
+  http://meyerweb.com/eric/tools/css/reset/
+  License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  /* 指定字体的名字 */
+  font-family: "myfont";
+  /* 服务器中字体的路径 */
+  src: url("../../fonts/FZSuHJW.TTF") format("truetype");
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.w,
+.top-bar,
+.banner,
+.menu,
+.course-list {
+  width: 17.325rem;
+  margin: 0 auto;
+}
+.w span,
+.top-bar span,
+.banner span,
+.menu span,
+.course-list span {
+  font-weight: bold;
+  color: #1d99e3;
+  font-size: 18px;
+  border-top: 2px solid #1d99e3;
+  margin: 8px 0;
+}
+
+html {
+  font-size: 5.33333333vw;
+  background-color: #eff0f4;
+}
+
+a {
+  text-decoration: none;
+}
+
+.banner img {
+  width: 100%;
+}
+
+.course-list {
+  height: 12rem;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  margin-bottom: 1.15rem;
+}
+
+.course-list .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.course-list .title h2 {
+  font-size: 0.825rem;
+  color: #24253d;
+  border-left: 0.125rem solid #3a84ff;
+  padding-left: 0.25rem;
+}
+
+.course-list .title a {
+  font-size: 0.7rem;
+  color: #656565;
+}
+
+.item-list {
+  width: 18rem;
+  height: 100%;
+  display: flex;
+  overflow: auto;
+}
+
+.item {
+  flex: none;
+  box-sizing: border-box;
+  width: 8rem;
+  height: 8.5rem;
+  padding: 0 0.55rem;
+  background-color: #fff;
+  box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.3);
+  border-radius: 0.3125rem;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-evenly;
+  margin-right: 0.6rem;
+}
+.item .cover img {
+  height: 104px;
+}
+
+.item img {
+  width: 100%;
+  vertical-align: top;
+}
+
+.item .course-title {
+  font-size: 0.7rem;
+  color: #24253d;
+}
+
+.item .user-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item .avatar {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.item .avatar .right_ {
+  float: left;
+  font-size: 22px;
+  font-weight: normal;
+  color: #e40c61;
+}
+
+.item .nickname {
+  margin-left: 2rem;
+  font-size: 0.6rem;
+  color: #969393;
+}
+.item .nickname span {
+  width: 24px;
+}
+.item .nickname span {
+  display: inline-block;
+  font-size: 12px;
+  padding: 3px 6px;
+  color: rgb(235, 235, 235);
+  background-color: #3a880e;
+  margin-right: 10px;
+}
+
+body {
+  /*走马灯动画效果*/
+}
+body .footer-banner {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  background-color: #f3f3f3;
+  bottom: 0;
+  position: fixed;
+  z-index: 999;
+  text-align: center;
+  right: 0;
+  left: 0;
+  width: 100%;
+  margin: 0 auto;
+}
+body .footer-banner .footer-banner-header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+body .footer-banner .footer-banner-header .footer-btn {
+  color: #434343;
+  display: flex;
+  height: 44px;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  margin-top: 5px;
+}
+body .footer-banner .footer-banner-header .footer-btn:first-child {
+  color: #1d99e3;
+}
+body .footer-banner .footer-banner-header .footer-btn span {
+  font-size: 13px;
+}
+body .topbar {
+  background-color: #f3f3f3;
+  position: fixed;
+  z-index: 999;
+  text-align: center;
+  top: 50px;
+  right: 0;
+  left: 0;
+  width: 100%;
+  margin: 0 auto;
+}
+body .topbar .top-bar-head {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+body .topbar .top-bar-head .logo img {
+  width: 90px;
+}
+body .topbar .top-bar-head input {
+  position: relative;
+  box-sizing: border-box;
+  width: 190px;
+  float: left;
+  padding: 0 10px;
+  height: 30px;
+  font-size: 16px;
+  border: 1px solid;
+  outline: none;
+  color: rgb(195, 195, 195);
+}
+body .topbar .top-bar-head .input-btn {
+  position: relative;
+}
+body .topbar .top-bar-head .fa-user {
+  margin-right: 15px;
+}
+body .topbar .top-bar-head i {
+  color: #616161;
+  scale: 0.6;
+}
+body .topbar .top-bar-head .i-btn {
+  box-sizing: border-box;
+  position: absolute;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  color: #f3f3f3;
+}
+body .topbar .top-bar-head .topbar-footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+body .topbar .top-bar-head .topbar-footer p {
+  width: 63px;
+  height: 26px;
+  font-size: 16px;
+  text-align: center;
+  font-family: "myfont";
+}
+body .topbar .top-bar-head .topbar-footer p:nth-child(1) {
+  border-bottom: 3px solid #1d99e3;
+}
+body .banner img {
+  margin-top: 160px;
+}
+body .menu a {
+  color: #434343;
+}
+body .menu {
+  height: 15.225rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-content: space-evenly;
+}
+body .menu a {
+  font-family: "myfont";
+  width: 8.175rem;
+  height: 6.6rem;
+  line-height: 2.6rem;
+  color: #616161;
+  border-radius: 0.25rem;
+  background-image: url(../../img/index/hot/1.png);
+  background-position: -40px 0;
+}
+body .menu a i {
+  margin-left: 10px;
+}
+body .menu a p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  line-height: 1rem;
+  width: 65px;
+  font-size: 14px;
+  margin-left: 15px;
+  font-weight: 600;
+}
+body .header-banner-head {
+  z-index: 999;
+  position: fixed;
+  text-align: center;
+  right: 0;
+  left: 0;
+  width: 100%;
+  margin: 0 auto;
+}
+body .header-banner-head .header-banner-body {
+  height: 50px;
+  background-color: #eff0f4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body .header-banner-head .header-banner-body .head-banner-left {
+  font-weight: 600;
+  color: #616161;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body .header-banner-head .header-banner-body .head-banner-left span {
+  scale: 0.7;
+}
+body .header-banner-head .header-banner-body .head-banner-left span {
+  margin: 0 8px;
+}
+body .header-banner-head .header-banner-body .head-banner-left p {
+  font-size: 16px;
+}
+body .header-banner-head .header-banner-body .head-banner-left i {
+  color: #ff6900;
+  font-size: 16px;
+}
+body .header-banner-head .header-banner-body .head-banner-left .ad-price {
+  color: #ff6900;
+}
+body .header-banner-head .header-banner-body span:last-child {
+  background-color: #ff6900;
+  color: #f3f3f3;
+  font-size: 16px;
+  font-family: "myfont";
+  border-radius: 12px;
+  padding: 2px 8px;
+}
+body .footer-more {
+  margin-bottom: 60px;
+  margin-top: 10px;
+  border: 2px solid #ccc;
+  border-left: none;
+  border-right: none;
+}
+body .footer-more .footer-head {
+  color: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 45px;
+}
+body .footer-more .footer-head i {
+  display: flex;
+  justify-content: flex-end;
+  width: 44px;
+  align-items: center;
+}
+body .lovef {
+  height: 380px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+body .lovef h2 {
+  font-family: "myfont";
+}
+body .lovef p {
+  font-size: 14px;
+}
+body .lovef .lovef_img {
+  width: 300px;
+}
+body .lovef .lovef_img .lovef_imgs {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-content: space-evenly;
+}
+body .lovef .lovef_img .lovef_imgs img {
+  width: 120px;
+  margin-top: 20px;
+}
+body .lovef .lovef_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "myfont";
+  width: 152px;
+  height: 36px;
+  background-color: #3a880e;
+  border-radius: 46px;
+  line-height: 46px;
+  margin-top: 15px;
+  font-size: 16px;
+  letter-spacing: 3px;
+  color: #ffffff;
+}
+body .nolike {
+  color: #999;
+  text-align: center;
+  font-size: 12px;
+  margin: 20px 0;
+}
+body .nolike span {
+  margin: 20px;
+}
+body .light-box-head {
+  background-color: #f3f3f3;
+  overflow: auto;
+  width: 373px;
+  height: 135px;
+  margin: 20px auto;
+  border: 1px solid rgb(134, 191, 50);
+  border-left: none;
+  border-right: none;
+  overflow: hidden;
+}
+body .light-box-head .light-box {
+  position: relative;
+  z-index: auto;
+  width: 2000px;
+  height: 270px;
+  animation: move 20s infinite linear;
+}
+body .light-box-head .light-box p {
+  font-size: 12px;
+  text-align: center;
+  margin: 10px 0;
+}
+body .light-box-head .light-box li {
+  border-bottom: none;
+  float: left;
+  margin: 0 20px;
+  height: auto;
+  padding: 0 8px;
+  border-left: 1px solid rgb(134, 191, 50);
+  border-right: 1px solid rgb(134, 191, 50);
+}
+body .light-box-head .light-box li img {
+  width: 100px;
+}
+@keyframes move {
+  to {
+    transform: translatex(-1400px);
+  }
+}
+body div:hover ul {
+  animation-play-state: paused;
+}/*# sourceMappingURL=mobile.css.map */

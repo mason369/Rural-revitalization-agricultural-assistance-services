@@ -1,0 +1,162 @@
+//资讯
+body{
+    .iconfont{
+        font-size: 1rem;
+    }
+    .real-time{
+        padding-top: 7.5rem;
+        .search{
+            height: 3.25rem;
+            .sousuo{
+                position: relative;
+                height: 2.5rem;
+                line-height: 2.75rem;
+                ion-icon{
+                    position: absolute;
+                    top: 50%;
+                    left: 0.25rem;
+                    transform: translateY(-50%);
+                }
+                input{
+                    border: none;
+                    outline: none;
+                }
+                button{
+                    width: 4rem;
+                    border: none;
+                    letter-spacing: 0.25rem;
+                }
+            }
+        }
+        .lbt{
+            height: 10.5rem;
+        }
+        .liebiao{
+            .zx{
+                height: 1.75rem;
+                line-height: 1.75rem;
+                position: relative;
+                &::before{
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    transform: translateX(-50%);
+                    width: 90%;
+                    height: 2px;
+                    background-color: #000;
+                }
+                span{
+                    width: 0.15rem;
+                    height: 1rem;
+                    position: absolute;
+                    top: 50%;
+                    left: 0.35rem;
+                    border-radius: 0.15rem;
+                    transform: translateY(-50%);
+                }
+                p{
+                    letter-spacing: 0.15rem;
+                    font-weight: bold;
+                }
+            }
+            .wz{
+                ol{
+                    li{
+                        height: 2rem;
+                        line-height: 2rem;
+                        border-top: 0.05rem solid #eaeaea;
+                        span{
+                            width: 1.5rem;
+                            font-style: oblique;
+                        }
+                        p{
+                            white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                        }
+                    }
+                }
+            }
+        }
+        .tw{
+            .wz{
+                height: 1.75rem;
+                line-height: 1.75rem;
+                position: relative;
+                border-bottom: 0.05rem solid #eaeaea;
+                p{
+                    font-weight: bold;
+                }
+            }
+            .tupian{
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                border-bottom: 0.05rem solid #eaeaea;
+                .twi{
+                    flex: 0 0 46%;
+                    width: calc(50% - 20px);
+                    height: 7.5rem;
+                    overflow: hidden;
+                    .img{
+                        padding: 0.15rem;
+                        border: 0.05rem solid #eaeaea;
+                    }
+                    span{
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+                }
+            }
+        }
+        .xtw{
+            .wz{
+                border-radius: 0.25rem;
+                .xtw-box{
+                    border-radius: 0.25rem;
+                    border-bottom: 0.05rem solid #eaeaea;
+                    .box-left{
+                        .img{
+                           width: 6.25rem;
+                           height: 4.25rem;
+                           img{
+                            border-radius: 5px;
+                           }
+                        }
+                    }
+                    .box-right{
+                        align-items: flex-start;
+                        justify-content: space-between;
+                        .top{
+                            padding-top: 0.5rem;
+                            span{
+                            height: 2.75rem;
+                            display: -webkit-box;
+                            -webkit-box-orient: vertical;
+                            text-overflow: ellipsis;
+                            -webkit-line-clamp: 3;
+                            overflow: hidden;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .fyq{
+            height: 2rem;
+            ul{
+                margin: 10px auto;
+                border-radius: 15px;
+                width: 70%;
+                justify-content: space-evenly;
+                li{
+                    span{
+                        &:nth-child(1){
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

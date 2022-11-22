@@ -1,0 +1,146 @@
+.w100{
+    width: 100%;
+}
+.h100{
+    height: 100%;
+}
+//colrs
+$colors:(
+    "bs": #fff,
+    "bs-1": #f3f3f3,
+    "bs-2": #eaeaea,
+    "bs-3": #e0e0e0,
+    "huis": #999,
+    "huis-1": #777,
+    "huis-2": #555,
+    "huis-3": #a5a5a5,
+    "lvs": #3a880e,
+    "lvs-1": rgb(33, 194, 100),
+    "lvs-2": rgb(134, 191, 50),
+    "heis": #000,
+    "heis-1": #111,
+    "heis-2": #333,
+    "heis-3": #24253d,
+    "lans": #3a84ff,
+    "hongs": #DE443B,
+    "hongs-1": #fa2c19,
+    "hongs-2": #e40c61,
+    "huangs": rgb(202, 174, 18),
+    "huangs-1": #ffd80c,
+    "chengs": rgb(255, 145, 0),
+    "chengs-1": rgb(230, 115, 14),
+);
+@each $colorKey, $color in $colors {
+    .text-#{$colorKey} {
+        color: $color;
+    }
+    .bg-#{$colorKey} {
+        background-color: $color;
+    }
+}
+//text
+@each $var in (left, center, right) {
+    .text-#{$var}{
+        text-align: $var;
+    }
+}
+
+//font-size
+$base-font-size: 1rem;
+$font-size:(
+    xxxs: 0.4,//8px
+    xxs: 0.5,//10px
+    xs: 0.6,//12px
+    s: 0.7,//14px
+    m: 0.8,//16px
+    l: 0.9,//18px
+    xl: 1,//20px
+    2xl: 1.1,//22px
+    4xl: 1.2,//24px
+    6xl: 1.4,//28px
+    8xl: 1.6,//32px
+    10xl: 1.8,//36px
+);
+@each $sizeKey, $size in $font-size {
+    .fs-#{$sizeKey} {
+        font-size: $size * $base-font-size;
+    }
+}
+
+.d-flex{
+    display: flex;
+}
+.flex-column{
+    flex-direction: column;
+}
+$flex-jc:(
+    start: flex-start,
+    end: flex-end,
+    center: center,
+    between: space-between,
+    around: space-around,
+);
+@each $Key, $value in $flex-jc {
+    .jc-#{$Key}{
+        justify-content: $value;
+    }
+}
+
+$flex-ai:(
+    start: flex-start,
+    end: flex-end,
+    center: center,
+    stretch: stretch,
+);
+@each $Key, $value in $flex-ai {
+    .ai-#{$Key}{
+        align-items: $value;
+    }
+}
+.flex-1{
+    flex: 1;
+}
+.flex-grow-1{
+    flex-grow: 1;
+}
+
+//边距
+$spacing-types:(m: margin, p: padding);
+$spacing-directions:(t: top, r: right, b: bottom, l: left,);
+$spacing-base-size: 1rem;
+$spacing-sizes: (
+    0: 0, 
+    1: 0.25, 
+    2: 0.5, 
+    3: 1, 
+    4: 1.5, 
+    5: 3,
+);
+
+@each $typeKey, $type in $spacing-types {
+    //m-1
+    @each $sizeKey, $size in $spacing-sizes {
+            .#{$typeKey}-#{$sizeKey}{
+                #{$type}: $size * $spacing-base-size;
+            }
+        }
+    //.mx-1
+    @each $sizeKey, $size in $spacing-sizes {
+            .#{$typeKey}x-#{$sizeKey}{
+                #{$type}-left: $size * $spacing-base-size;
+                #{$type}-right: $size * $spacing-base-size;
+            }
+            .#{$typeKey}y-#{$sizeKey}{
+                #{$type}-top: $size * $spacing-base-size;
+                #{$type}-bottom: $size * $spacing-base-size;
+            }
+        }
+    // .mt-1
+    @each $directionKey, $direction in $spacing-directions {
+        @each $sizeKey, $size in $spacing-sizes {
+            .#{$typeKey}#{$directionKey}-#{$sizeKey}{
+                #{$type}-#{$direction}: $size * $spacing-base-size;
+            }
+        }
+    }
+}

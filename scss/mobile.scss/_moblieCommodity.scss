@@ -1,0 +1,203 @@
+//购买界面
+body{
+    .fxg_banner{
+        width: 100%;
+        .fh{
+            position: absolute;
+            top: 5%;
+            left: 0.5rem;
+            transform: translateY(-5%);
+            z-index: 99;
+            .iconfont{
+                font-size: 1.6rem;
+            }
+        }
+        .gwc{
+            position: absolute;
+            top: 5%;
+            right: 0.5rem;
+            transform: translateY(-5%);
+            z-index: 99;
+            .iconfont{
+                font-size: 1.6rem;
+            }
+        }
+        .fxg_banner_top{
+            background: #e0e0e0;
+            height: 15rem;
+            margin: 0 auto;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .img{
+                width: 20rem;
+                height: 15rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: #fff;
+                img{
+                    width: 75%;
+                    height: auto;
+                }
+            }
+        }
+        .fxg_banner_mian{
+            height: 3rem;
+            .zhanshi{
+                ul{
+                    margin: 0 auto;
+                    li{
+                        width: 2.4rem;
+                        height: 2.2rem;
+                        margin: 0.15rem 0.5rem;
+                        border-radius: 0.75rem;
+                        border: 2zpx solid #a5a5a5;
+                        overflow: hidden;
+                    }
+                }
+            }
+        }
+        .fxg_banner_bottom{
+            height: 3.25rem;
+            .cxj{
+                background-image: url(//imgsrc.baidu.com/super/pic/item/7bec54e736d12f2ec3cb5fa00ac2d56284356820.jpg);
+                background-size: 100%;
+                .img{
+                    justify-content: space-between;
+                    .cxj_lft{
+                        .cxj_lft_top{
+                            span{
+                                &:nth-child(2){
+                                    width: 2.3rem;
+                                    height: 2z1px;
+                                    border-radius: 0.75rem;
+                                    position: relative;
+                                    margin-left: 0.25rem;
+                                }
+                                p{
+                                    position: absolute;
+                                    top: 50%;
+                                    left: 8px;
+                                    transform: translateY(-50%);
+                                }
+                            }
+                        }
+                        .cxj_lft_bottom{
+                            .msj{
+                                p{
+                                    font-weight: bold;
+                                    &:nth-child(2){
+                                        transform: translateY(-0.5rem);
+                                    }
+                                }
+                            }
+                            .yj{
+                                text-decoration: line-through;
+                            }
+                        }
+                    }
+                    .cxj_right{
+                        .cxj_right_btn{
+                            .seckill_tm{
+                                width: 5rem;
+                                    height: 1.5rem;
+                                    line-height: 1.5rem;
+                                    border-radius: 0.25rem;
+                                    background: linear-gradient( #ff6900, #efaf66);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .fxg_main{
+        .spmc{
+            font-weight: bold;
+        }
+        .fxgw{
+            .fxgimg{
+                width: 4rem;
+            }
+        }
+    }
+    .fxg_footer{
+        margin-bottom: 3.25rem;
+        .tj{
+            .sp{
+                .img{
+                    width: 6rem;
+                    height: 6rem;
+                }
+            }
+            .cxjg{
+                span{
+                    width: 2.4rem;
+                    height: 1.1rem;
+                    font-size: 0.6rem;
+                    text-align: center;
+                    line-height: 1.1rem;
+                    border-radius: 0.25rem;
+                    border: 0.1rem solid #ff6900;
+                    color: #ff6900;
+                }
+            }
+            .jg{
+                span{
+                    &:nth-child(1){
+                        font-weight: bold;
+                    }
+                }
+                .yhj{
+                    transform: translateY(-0.1rem);
+                }
+                .yj{
+                    text-decoration: line-through;
+                }
+            }
+            .miaoshajg{
+                width: 4.75rem;
+                height: 2.25rem;
+                .msbox{
+                    position: relative;
+                    border-radius: 1.5rem;
+                    line-height: 1.5rem;
+                    background: linear-gradient(to right, rgb(245, 145, 5), rgb(255, 183, 52));
+                    .msdjs{
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -40%);
+                        .miaosha_tm{
+                            transform: scale(0.8);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .goumai{
+        height: 3rem;
+        position: fixed;
+        bottom: 0;
+        line-height: 3rem;
+        align-items: center;
+        border-top: 0.05rem solid #e0e0e0;
+        .dp,
+        .gwc{
+            flex-wrap: nowrap;
+            ion-icon{
+                height: 1.1rem;
+            }
+        }
+        .ljgm{
+            width: 9rem;
+            height: 50px;
+            background: linear-gradient(177deg, red, #ff8d8d);
+            border-radius: 1.5rem;
+            line-height: 2.5rem;
+        }
+    }
+}

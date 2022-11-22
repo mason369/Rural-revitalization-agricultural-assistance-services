@@ -1,0 +1,579 @@
+
+@font-face {
+	/* 指定字体的名字 */
+	font-family: "myfont";
+	/* 服务器中字体的路径 */
+	src: url("../../fonts/FZSuHJW.TTF") format("truetype");
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.w,
+.top-bar,
+.banner,
+.menu,
+.course-list {
+	width: 17.325rem;
+	margin: 0 auto;
+	span {
+		font-weight: bold;
+		color: $bule-color;
+		font-size: .9rem;
+		border-top: .1rem solid $bule-color;
+		margin: .4rem 0;
+	}
+}
+
+html {
+	font-size: 5.33333333vw;
+	background-color: #eff0f4;
+}
+
+a {
+	text-decoration: none;
+}
+
+.banneres {
+	width: 18.75rem;
+	height: 5.5rem;
+	margin: 0 auto;
+  }
+.banneres img{
+	width: 100%;
+	overflow: hidden;
+  }
+
+.course-list {
+	height: 12rem;
+	display: flex;
+	flex-flow: column;
+	justify-content: space-between;
+	margin-bottom: 1.15rem;
+}
+
+.course-list .title {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.course-list .title h2 {
+	font-size: 0.825rem;
+	color: #24253d;
+	border-left: 0.125rem solid #3a84ff;
+	padding-left: 0.25rem;
+}
+
+.course-list .title a {
+	font-size: 0.7rem;
+	color: #656565;
+}
+
+.item-list {
+	width: 18rem;
+	height: 100%;
+	display: flex;
+	overflow: auto;
+}
+
+.item {
+	flex: none;
+	box-sizing: border-box;
+	width: 8rem;
+	height: 8.5rem;
+	padding: 0 0.55rem;
+	background-color: #fff;
+	box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.3);
+	border-radius: 0.3125rem;
+	display: flex;
+	flex-flow: column;
+	justify-content: space-evenly;
+	margin-right: 0.6rem;
+
+	.cover {
+		img {
+			height: 5.2rem;
+		}
+	}
+}
+
+.item img {
+	width: 100%;
+	vertical-align: top;
+}
+
+.item .course-title {
+	font-size: 0.7rem;
+	color: #24253d;
+}
+
+.item .user-info {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.item .avatar {
+	display: flex;
+	align-items: center;
+	height: 100%;
+	.right_ {
+		float: left;
+		font-size: 1.1rem;
+		font-weight: normal;
+		color: #e40c61;
+	}
+}
+
+.item .nickname {
+	span {
+		width: 1.2rem;
+	}
+	margin-left: 2rem;
+	font-size: 0.6rem;
+	color: #969393;
+
+	span {
+		display: inline-block;
+		font-size: .6rem;
+		padding: .15rem .3rem;
+		color: rgb(235, 235, 235);
+		background-color: #3a880e;
+		margin-right: .5rem;
+	}
+}
+body {
+	.footer-banner {
+		box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.3);
+		background-color: $words-color;
+		bottom: 0;
+		position: fixed;
+		z-index: 999;
+		text-align: center;
+		right: 0;
+		left: 0;
+		width: 100%;
+		margin: 0 auto;
+		.footer-banner-header {
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+			.footer-btn {
+				color: $huihei-color;
+				display: flex;
+				height: 2.2rem;
+				flex-direction: column;
+				text-align: center;
+				align-items: center;
+				margin-top: .25rem;
+				span {
+					font-size: .65rem;
+				}
+			}
+		}
+	}
+	.topbar {
+		background-color: $words-color;
+		position: fixed;
+		z-index: 999;
+		text-align: center;
+		top: 2.5rem;
+		right: 0;
+		left: 0;
+		width: 100%;
+		margin: 0 auto;
+		.top-bar-head {
+			box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.3);
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			align-items: center;
+			.logo {
+				img {
+					width: 4.5rem;
+				}
+			}
+			input {
+				position: relative;
+				box-sizing: border-box;
+				width: 9.5rem;
+				float: left;
+				padding: 0 .5rem;
+				height: 1.5rem;
+				font-size: .8rem;
+				border: .05rem solid;
+				outline: none;
+				color: rgb(195, 195, 195);
+			}
+			.input-btn {
+				position: relative;
+			}
+			.fa-user {
+				margin-right: .75rem;
+			}
+			i {
+				color: $black-color;
+				scale: 0.6;
+			}
+			.i-btn {
+				box-sizing: border-box;
+				position: absolute;
+				right: 0;
+				width: 1.5rem;
+				height: 1.5rem;
+				color: $words-color;
+			}
+			.topbar-footer {
+				p {
+					&:not(:nth-child(3)){
+						width: 3.15rem;
+					height: 1.3rem;
+					font-size: .8rem;
+					text-align: center;
+					font-family: "myfont";
+					}
+				}
+				width: 19.5rem;
+				display: flex;
+				justify-content: space-around;
+				align-items: center;
+			}
+		}
+	}
+
+	.miaosha{
+		width: 100%;
+		box-sizing: border-box;
+		.floor-container{
+			height: 7rem;
+			border: .05rem solid #f2f2f2;
+			border-radius: 0.6rem;
+			overflow: hidden;
+			.floor-top{
+				height: 1.7694rem;
+				line-height: 1.7694rem;
+				background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABYwAAACQBAMAAABZrTKvAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAYUExURUdwTO0PD+wQEOwVFewREekNDewQEOsQEC1iODQAAAAIdFJOUwB9YxIrs0VtoD6UjwAAA/1JREFUeNrt3cGO22QUBeAprsq2qSjdUks420gOsG0VK/sBjdiWEHnNmPeXsP94aIJEQExvmWt9n/oEZ46u72877s3NVa/vPrq9gZTOa3wnDnK6U2PUGJ7YUmE3Ro3h//LtWY1/FAc5fXdW45/EQU7Pzmr8Uhzk9Pysxu/EQfrl+GdhkH+rsFOQVvVwy+12IwzS+nKu8W+iILH3pcVfCYLU9q/vbn8VAwAAAAAAAJ/I88P9m+adHMjs+1XhQSqJvVjNPsiCrKq3DzV+tZEGSf2w+tPv0iDpML7/WOM3xjE5fbE68408SOmX8xp/LQ9S7hSrC7YKMnpxWeMPEiGhZ5c1fikREnp/WWM/7CX9Cc8Zj5zeXtb4lURI6P6yxm8kQkKrv5AI+WtsGmOpAEc8+G/ccGMBPP5gATyMZgG8GsQCeFGTxZ3xnPDIyY+YWMJW4SelLIAf+LOEcexzKyyAj1+xBD5FyBL4MCwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAkNtGBKQvcVvpMclV7UQOZG/xrt2Yx+ReKbbddtdWkiDxMK623WhnqyD1TtEVtmOS13g/1dhyTF7jZtwd97YKstd4P/XYNGYB07gzjUld4+PUY0sFdmOwG8NVVVVdfdD8cN/YNObp2pT3fjbXa2w15mnP4nZXJu2VkrZlHO+8G8TTncXj5lvOb5srTd9Oj6K1+HFJb8yBuGG87fpJd30cT7zh9qiLnle2I9Pt+sOhrqce/21NN9U/bM/8ixZ31y95PEK73ff1pDnurp3yKn+AR+ZcVjfzOGwY16ca90cRR+a8Hze3Y2czi5kS+0M99/ho4Ia1uCoXvWa85JkVIde6aRgPw9TjfqfGYcN4Xt16syIk324cxkO9Xq/HWdFJOCrm7XzROxzNipApMcY7dbhE7IIXetE7XfKE/OlNU2Jd1ophulchkKAad2UYj7tb76XtkBqfOrye9mM1jpwW80VPyBE723ixW0//hnLBk0jctFiXo7RLXlSNh3FMTNO46Xduakad8OoyjdemccyYKPfb6hKwhENjHoYSslkROI2n7dhSERpzWd0cQCKXtnU5RUs4cqkoB2khB+V7OAU8Tgqnj9BpMZwOIEIO0J7uG5d7QY3HH3E1Lg9LB9M4qMbdfENz3Np6D6MjYy5XvLrx+CPm8HEo71ScXg3S46CYu3J/fl033r8Kybc9Lcdevoo+g/ReDQq93PXzC8ee9odOCy9qhua7nWvce/cqclqM47iZWizkoB53/Vjkpul92yo25vlHTEKOmRPtww/8BRw6juevgYgiaq0YAz52fuwYHrMWx17vfEHhM8RcvvXh/ywODli+8TnLQMAAAADwWfwBKZghRTcFaz4AAAAASUVORK5CYII=);
+				background-size: contain;
+				.ms{
+					width: 3.4rem;
+				}
+				.ms-time{
+					width: 5.75rem;
+					.seckill-nth{
+						position: relative;
+						left: -1;
+						li{
+							width: 1.5rem;
+						}
+					}
+					.seckill-nth::after{
+						content: '';
+							width: 1.0669rem;
+							height: 0.9106rem;
+							display: inline-block;
+							vertical-align: middle;
+							background-image: url(https://wq.360buyimg.com/jdm-home-page/pages/images/seckill-time-to_1de70c91.png);
+							background-repeat: no-repeat;
+							background-position: 50%;
+							background-size: contain;
+					}
+					.seckill_time{
+						.seckill-time{
+							width: 0.8rem;
+							border-radius: 0.3rem;
+							font-weight: 400;
+							height: 1.25rem;
+							line-height: 1.25rem;
+						}
+					}
+				}
+				.gdtj{
+					ion-icon{
+						width: 1.6rem;
+						height: 1.6rem;
+						svg{
+							width: 1.6rem;
+							height: 1.6rem;
+						}
+					}
+				}
+			}
+			.foorl-bottom{
+				ul{
+					width: 32.2rem;
+					li{
+						width: 2.975rem;
+						.mt-img{
+							padding: 0 0.05rem;
+							img{
+								height: auto;
+								overflow: hidden;
+								min-width: 0.05rem;
+								min-height: 0.05rem;
+							}
+						}
+						.jg{
+							margin: 0 auto;
+							span{
+								height: 0.6rem;
+								line-height: 0.6rem;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.banner {
+		img {
+			margin-top: 8rem;
+		}
+	}
+	.menu {
+		a {
+			color: $huihei-color;
+		}
+	}
+	.menu {
+		height: 15.225rem;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		align-content: space-evenly;
+	}
+
+	.menu a {
+		font-family: "myfont";
+		width: 8.175rem;
+		height: 6.6rem;
+		line-height: 2.6rem;
+		color: $words-color;
+		border-radius: 0.25rem;
+		background: url(../../img/1.png) ;
+		background-position: -11rem .45rem;
+		i {
+			margin-left: .5rem;
+		}
+		p {
+			font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+				sans-serif;
+			line-height: 1rem;
+			width: 3.25rem;
+			font-size: .7rem;
+			margin-left: .75rem;
+			font-weight: 600;
+		}
+	}
+
+	.header-banner-head {
+		z-index: 999;
+		position: fixed;
+		text-align: center;
+		right: 0;
+		left: 0;
+		width: 100%;
+		margin: 0 auto;
+		.header-banner-body {
+			height: 2.5rem;
+			background-color: #eff0f4;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			.head-banner-left {
+				.closed-btn-1 {
+					padding: .3rem;
+					scale: 0.7;
+					border: none;
+				}
+				font-weight: 600;
+				color: $black-color;
+
+				p {
+					font-size: .8rem;
+				}
+				i {
+					color: #ff6900;
+					font-size: .8rem;
+				}
+				.ad-price {
+					color: #ff6900;
+				}
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+			}
+			span {
+				&:last-child {
+					background-color: #ff6900;
+					color: $words-color;
+					font-size: .8rem;
+					font-family: "myfont";
+					border-radius: .6rem;
+					padding: .1rem .4rem;
+				}
+			}
+		}
+	}
+	.footer-more {
+		margin-bottom: 3rem;
+		margin-top: .5rem;
+		border: .1rem solid $grey-color;
+		border-left: none;
+		border-right: none;
+		.footer-head {
+			color: $grey-color;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 2.25rem;
+			i {
+				display: flex;
+				justify-content: flex-end;
+				width: 2.2rem;
+				align-items: center;
+			}
+		}
+	}
+	.lovef {
+		height: 19rem;
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		flex-direction: column;
+		align-items: center;
+		h2 {
+			font-family: "myfont";
+		}
+		p {
+			font-size: .7rem;
+		}
+
+		.lovef_img {
+			width: 15rem;
+			.lovef_imgs {
+				display: flex;
+				flex-flow: row wrap;
+
+				justify-content: space-between;
+				align-content: space-evenly;
+				img {
+					width: 6rem;
+					margin-top: 1rem;
+				}
+			}
+		}
+		.lovef_btn {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-family: "myfont";
+			width: 7.6rem;
+			height: 1.8rem;
+			background-color: #3a880e;
+			border-radius: 2.3rem;
+			line-height: 2.3rem;
+			margin-top: .75rem;
+			font-size: .8rem;
+			letter-spacing: .15rem;
+			color: #ffffff;
+		}
+	}
+	.nolike {
+		color: #999;
+		text-align: center;
+		font-size: .6rem;
+		margin: 1rem 0;
+		span {
+			margin: 1rem;
+		}
+	}
+	.light-box-head {
+		background-color: $words-color;
+		overflow: auto;
+		width: 18.65rem;
+		height: 6.75rem;
+		margin: 1rem auto;
+		border: .05rem solid $green-color;
+		border-left: none;
+		border-right: none;
+		overflow: hidden;
+		.light-box {
+			position: relative;
+			z-index: auto;
+			p {
+				font-size: .6rem;
+				text-align: center;
+				margin: .5rem 0;
+			}
+			width: 100rem;
+			height: 13.5rem;
+			animation: move 20s infinite linear;
+			li {
+				border-bottom: none;
+				float: left;
+				margin: 0 1rem;
+				height: auto;
+				padding: 0 .4rem;
+				border-left: .05rem solid $green-color;
+				border-right: .05rem solid $green-color;
+
+				img {
+					width: 5rem;
+				}
+			}
+		}
+	}
+
+	/*走马灯动画效果*/
+	@keyframes move {
+		to {
+			transform: translatex(-70rem);
+		}
+	}
+	div:hover ul {
+		animation-play-state: paused;
+	}
+	.swiper {
+        width: 100%;
+        height: 100%;
+		.swiper-button-prev,
+		.swiper-button-next{
+			&::after{
+				font-size: 1.5rem;
+				color: #fff;
+			}
+		}
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: .9rem;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+	  .real_time{
+		display: none;
+	  }
+}

@@ -1,0 +1,144 @@
+//助农
+body{
+    box-sizing: border-box;
+    outline: none;
+    .zn-banner{
+        padding-top: 7.5rem;
+        .zn-vido{
+            position: relative;
+            z-index: -1;
+            height: 8rem;
+            overflow: hidden;
+            .lxzn{
+                position: absolute;
+                top: 0;
+                left: 0;
+                background-color: rgba($color: #000, $alpha: 0.2);
+                .wz{
+                    position: absolute;
+                    top: 50%;
+                    left: 40%;
+                    transform: translate(-3%, -50%);
+                    p{
+                        letter-spacing: 0.6rem;
+                        color: #fff;
+                        font-weight: 600;
+                    }
+                    span{
+                        display: block;
+                        letter-spacing: 0.35rem;
+                        color: #fff;
+                        font-weight: 600;
+                    }
+                    
+                }
+            }
+        }
+        .gmxz{
+            border-radius: 0.4rem;
+            height: 2.5rem;
+            .tz{
+                height: 2.5rem;
+                width: 5rem;
+                overflow: hidden;
+                .lbt{
+                    animation: tz 6s infinite ease-out;
+					animation-delay: 1s;
+                    span{
+                        display: block;
+                        height: 2.5rem;
+                        line-height: 2.5rem;
+                        &:nth-child(1){
+                            position: absolute;
+							top: 0.05rem;
+							left: 0.25rem;
+							text-align: center;
+                        }
+                        &:nth-child(2){
+                            position: absolute;
+							top: 2.75rem;
+							left: 0.25rem;
+							text-align: center;
+                        }
+                        &:nth-child(3){
+                            position: absolute;
+							top: 5.5rem;
+							left: 0.25rem;
+							text-align: center;
+                        }
+                    }
+                }
+            }
+            @keyframes tz {
+					0% {
+						transform: translateY(0);
+					}
+
+					5% {
+						transform: translateY(-57px);
+					}
+
+					50% {
+						transform: translateY(-57px);
+					}
+
+					55% {
+						transform: translateY(-110px);
+					}
+
+					to {
+						transform: translateY(-110px);
+					}
+				}
+        }
+        .axjz {
+           .ax{
+            height: 2rem;
+            line-height: 2rem;
+           }
+           .nh{
+            height: 8rem;
+            border-bottom: 0.05rem solid #999;
+            .img{
+                width: 8rem;
+                img{
+                    width: 100%;
+                }
+            }
+            .text{
+                .text-top{
+                    .text-top-left{
+                        width: 3rem;
+                        img{
+                            width: 100%;
+                        }
+                    }
+                }
+                .text-bottom{
+                    .text-bottom-top{
+                        .li{
+                            width: 80%;
+                            height: 0.25rem;
+                            border-radius: 0.15rem;
+                            li{
+                                position: relative;
+                                border-radius: 0.15rem;
+                                list-style: none;
+                            }
+                            li::before{
+                                content: '';
+                                width: 63%;
+                                height: 0.25rem;
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                background-color: #ffd80c;
+                            }
+                        }
+                    }
+                }
+            }
+           }
+        }
+    }
+}
